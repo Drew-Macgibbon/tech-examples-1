@@ -1,9 +1,16 @@
+---
+import List from '../components/Listbox.vue'
+---
 <nav>
 	<a class="link" href="/">
 		<div class="monogram">JW</div>
 	</a>
-	<a class="link" href="/projects/"> Portfolio</a>
-	<a class="link" href="/about/"> About</a>
+	<div class="flex flex-row gap-8">
+		<a class="link" href="/about">About</a>
+		<a class="link" href="/projects">Projects</a>
+		<a class="link" href="/contact">Contact</a>
+		<List client:load />
+	</div>
 	<div class="socials">
 		<a class="social" href="https://twitter.com/me">
 			<svg class="socialIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
